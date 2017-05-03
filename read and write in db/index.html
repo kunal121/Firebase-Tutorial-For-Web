@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Firebase Web Basics</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+
+	<script src="https://use.fontawesome.com/939e9dd52c.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="mainDiv" align="right">
+		<h1 align="left" id="fireheading">Firebase Web App</h1>
+		<textarea id="mainText" placeholder="Enter text here..."></textarea>
+		<button id="submitbtn" onclick="f()"> <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+	</div>
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBcP0PMURLh_Ao5csxUM7UalAubJcjRtFk",
+    authDomain: "fir-web-learn-7b5ed.firebaseapp.com",
+    databaseURL: "https://fir-web-learn-7b5ed.firebaseio.com",
+    projectId: "fir-web-learn-7b5ed",
+    storageBucket: "fir-web-learn-7b5ed.appspot.com",
+    messagingSenderId: "1076783098485"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="app.js"></script>
+</body>
+</html>
