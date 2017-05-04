@@ -1,0 +1,56 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+ <!-- Compiled and minified JavaScript -->
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+  <div class="row">
+         <div class="col s6 offset-s3 ">
+           <div class="card blue-grey darken-1">
+             <div class="card-content white-text">
+               <span class="card-title">Card Title</span>
+               <div class="row">
+    <div class="input-field col s6">
+      <input value="" id="email" type="text" class="validate" id="email">
+      <label class="active" for="email">Email</label>
+    </div>
+  </div>
+             </div>
+             <div class="card-action">
+               <a class="waves-effect waves-light btn" id="submit" >Submit</a>
+               <a class="waves-effect waves-light btn" id="Database" >DataBase</a>
+             </div>
+           </div>
+         </div>
+       </div>
+    <div class="row">
+      <div id="data" class="col s6 offset-s3" style="display:none">
+        <table>
+          <thead>
+            <th>Email Address</th>
+          </thead>
+          <tbody id="table_body">
+
+          </tbody>
+        </table>
+    </div>
+  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBcP0PMURLh_Ao5csxUM7UalAubJcjRtFk",
+      authDomain: "fir-web-learn-7b5ed.firebaseapp.com",
+      databaseURL: "https://fir-web-learn-7b5ed.firebaseio.com",
+      projectId: "fir-web-learn-7b5ed",
+      storageBucket: "fir-web-learn-7b5ed.appspot.com",
+      messagingSenderId: "1076783098485"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
